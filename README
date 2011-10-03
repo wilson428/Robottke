@@ -1,0 +1,15 @@
+DISCLAIMER: I'm a reporter by training and a self-taught programmer, which will be very evident when you see the code. I've never worked on a colloborative project in any formal sense, so I'm really looking forward to learning about the process by working with you all. Please don't hestitate to correct me on any procedures or anything else!
+--Chris
+
+These Python scripts are heavily commented, so I won't immediately reprint everything here. But here are the basics:
+-This project uses SQLite (sqlite3 lib in Python) for storage of links to articles of possible interest
+-It can optionally also save the complete HTML of every article it scans to the "articles" directory. 
+-scripts in the "tools" directory are one-off scripts to build the information about Kottke's blog and perform other setup.
+-The main guts of Robottke are in:
+--spider.py, which gathers the hundreds of "candidate links" to consider for blogging
+--librarian.py, a database-agnostic tool to retrieve the contents of pages
+--slatelabs.py, a collection of useful scripts I use across projects
+--brains.py, which analysts posts
+--pick_posts.py, which selects which posts to actually blog
+
+PLEASE feel free to reorganize this in a more sensible manner!
